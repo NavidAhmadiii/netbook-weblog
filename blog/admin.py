@@ -45,7 +45,7 @@ admin.site.register(Category, CategoryAdmin)
 
 
 class AricleAdmin(admin.ModelAdmin):
-    list_display = ('title', 'slug', 'jpublished', 'status', 'category_to_str')
+    list_display = ('title', 'thumbnail_tag', 'slug', 'jpublished', 'status', 'category_to_str')
     list_filter = ('published', 'status')
     search_fields = ('title', 'description')
     prepopulated_fields = {'slug': ('title',)}
